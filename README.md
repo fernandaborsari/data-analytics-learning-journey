@@ -1,13 +1,21 @@
-# Python Data Analytics Portfolio
+# Data Analytics Learning Journey
 
-This repository contains simple Python data analytics projects focused on ETL and exploratory data analysis, created for professional development and portfolio purposes.
+## Overview
+This repository documents my structured hands-on learning in data analytics, Python, SQL, and modern data tools during a career transition period.
 
-## Projects
+## Objectives
+- Strengthen Python and data processing skills  
+- Practice SQL querying and analytical thinking  
+- Explore ETL concepts and data workflows  
+- Gain exposure to modern tools such as Databricks  
+- Apply business-oriented reasoning to datasets  
 
-### Project 1 – Basic ETL and Analysis
-- Dataset: Student Academic Stress Level
-- Focus: ETL, data cleaning, basic analysis
-- Tools: Python, Pandas
-- Status: In progress
+## Structure
+Each folder represents a focused practice project, covering:
+- Data cleaning  
+- Exploratory data analysis  
+- Metric calculation  
+- Analytical insights  
 
-More projects will be added over time.
+## Purpose
+This repository reflects continuous technical development and practical experimentation.

@@ -1,21 +1,18 @@
-# Data Analytics Learning Journey
+# Data Portfolio
 
-## Overview
-This repository documents my structured hands-on learning in data analytics, Python, SQL, and modern data tools during a career transition period.
+Welcome to my Data Portfolio repository.
 
-## Objectives
-- Strengthen Python and data processing skills  
-- Practice SQL querying and analytical thinking  
-- Explore ETL concepts and data workflows  
-- Gain exposure to modern tools such as Databricks  
-- Apply business-oriented reasoning to datasets  
+This repository contains data projects focused on:
 
-## Structure
-Each folder represents a focused practice project, covering:
-- Data cleaning  
-- Exploratory data analysis  
-- Metric calculation  
-- Analytical insights  
+- Data Cleaning & ETL (Python)
+- SQL Analysis & Data Profiling
+- Exploratory Data Analysis (EDA)
+- Business-Oriented Analytics
+- Data Quality Checks
+- Data Engineering Foundations
 
-## Purpose
-This repository reflects continuous technical development and practical experimentation.
+The goal of this portfolio is to demonstrate practical skills in data manipulation, transformation, and analysis using Python and SQL.
+
+---
+
+## Repository Structure

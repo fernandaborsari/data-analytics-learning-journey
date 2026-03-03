@@ -1,18 +1,34 @@
 import pandas as pd
+from pathlib import Path
 
-# Load dataset
-df = pd.read_csv("../data/academic_stress.csv")
+# Base folder: projects/academic_stress
+BASE = Path(__file__).resolve().parents[1]
 
-# Show basic information
-print("Shape:", df.shape)
-print("\nColumns:")
-print(df.columns)
+RAW = BASE / "data" / "raw" / "academic_stress.csv"
+OUT = BASE / "data" / "processed" / "academic_stress_clean.csv"
 
-# Show first rows
-print("\nPreview:")
-print(df.head())
+def main() -> None:
+    # EXTRACT
+    df = pd.read_csv(RAW)
 
-# Save a clean copy
-df.to_csv("../data/academic_stress_clean.csv", index=False)
+    # TRANSFORM
+    df.columns = (
+        df.columns
+        .str.strip()
+        .str.lower()
+        .str.replace(" ", "_", regex=False)
+        .str.replace("?", "", regex=False)
+    )
 
-print("\nClean file saved successfully.")
+    if "timestamp" in df.columns:
+        df = df.drop(columns=["timestamp"])
+
+    # LOAD
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(OUT, index=False)
+
+    print(f"Saved to: {OUT}")
+    print("ETL completed successfully.")
+
+if __name__ == "__main__":
+    main()

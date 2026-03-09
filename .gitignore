@@ -1,0 +1,8 @@
+projects/north_texas_housing/data/raw/
+projects/north_texas_housing/data/processed/
+*.csv
+projects/north_texas_housing/data/raw/*
+projects/north_texas_housing/data/processed/*
+!projects/north_texas_housing/data/raw/.gitkeep
+!projects/north_texas_housing/data/raw/zillow/.gitkeep
+!projects/north_texas_housing/data/processed/.gitkeep
